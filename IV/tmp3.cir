@@ -1,0 +1,10 @@
+*IV CHARACTERISTICS
+Vdd vdd 0 1
+Vgs vgs 0 0
+Vds vds 0 0
+
+M1 vds vgs 0 0 NMOS L=60n W=240n
+.model NMOS NMOS
+.dc Vds 0 5 0.01 Vgs 0 1.8 0.2
+.backanno
+.end

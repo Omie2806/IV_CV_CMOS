@@ -1,0 +1,11 @@
+*IV CHARACTERISTICS Vds fixed and Aspect ratio (W/L) varying higher = more Id
+Vdd vdd 0 1
+Vgs vgs 0 0
+Vds vds 0 1.8
+
+M1 vds vgs 0 0 NMOS L=60n W={W}
+.model NMOS NMOS
+.dc Vgs 0 5 0.1
+.step param W 120n 480n 120n
+.backanno
+.end

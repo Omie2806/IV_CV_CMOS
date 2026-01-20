@@ -1,0 +1,10 @@
+*IV CHARACTERISTICS
+Vgs vgs 0 0
+Vds vds 0 0
+
+M1 vds vgs 0 0 PMOS L=60n W=240n
+.model PMOS PMOS
+.dc Vds 0 -5 -0.1 Vgs 0 -1.8 -0.6
+.step param W 120n 480n 120n
+.backanno
+.end

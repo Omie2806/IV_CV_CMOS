@@ -1,0 +1,12 @@
+*IV CHARACTERISTICS Vds fixed Vbs varied
+Vdd vdd 0 1
+Vgs vgs 0 0
+Vds vds 0 1.8
+Vsb vsb 0 {V}
+
+M1 vds vgs vsb 0 NMOS L=60n W=240n
+.model NMOS NMOS
+.dc Vgs 0 1.8 0.1
+.step param V 0.2 0.4 0.2
+.backanno
+.end
